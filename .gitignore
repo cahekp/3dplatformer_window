@@ -1,0 +1,14 @@
+/bin
+/include
+/data/*
+/lib
+/utils
+/source/.vs/*
+/source/x64/*
+/source/camera_window.vcxproj.user
+camera_window.project
+launch_debug.bat
+launch_editor.bat
+launch_release.bat
+!data/camera_window.world
+!data/camera_window.world.meta
