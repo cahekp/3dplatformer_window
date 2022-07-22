@@ -1,6 +1,6 @@
 # 3D Платформер: Окна
 
-![](https://github.com/cahekp/3dplatformer_window/demo.gif)
+![](https://github.com/cahekp/3dplatformer_window/blob/main/demo.gif)
 
 # Инструкция по запуску
 1. Скачиваем и устанавливаем Unigine SDK Browser
