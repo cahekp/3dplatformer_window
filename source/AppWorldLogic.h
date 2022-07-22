@@ -17,13 +17,27 @@
 
 #include <UnigineLogic.h>
 #include <UnigineStreams.h>
+#include <UnigineNode.h>
+#include <UniginePlayers.h>
 
 class AppWorldLogic : public Unigine::WorldLogic
 {
 public:
 	int init() override;
 	int update() override;
-	int shutdown() override;
+
+private:
+	void update_mat_ball();
+	Unigine::Math::ivec4 get_mat_ball_rectangle() const;
+	void move_camera_along_plane(
+		const Unigine::Math::vec3 &cam_pos,
+		const Unigine::Math::vec3 &ray_from,
+		const Unigine::Math::vec3 &ray_to,
+		const Unigine::Math::vec3 &plane_point,
+		const Unigine::Math::vec3 &plane_normal);
+
+	Unigine::NodePtr mat_ball;
+	Unigine::PlayerPtr player;
 };
 
 #endif // __APP_WORLD_LOGIC_H__
